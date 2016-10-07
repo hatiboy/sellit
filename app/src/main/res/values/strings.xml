@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Sell It</string>
+    <string name="just_now">bây giờ</string>
+    <string name="a_minute_ago">1 phút trước</string>
+    <string name="minute_ago">phút trước</string>
+    <string name="an_hour_ago">1 giờ trước</string>
+    <string name="hours_ago">giờ trước</string>
+    <string name="yesterday">hôm qua</string>
+    <plurals name="hours_ago">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragmentsssssssss</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="take_photo">
+        <item >Chọn ảnh có sẵn</item>
+        <item >Chụp ảnh</item>
+
+    </string-array>
+    <string-array name="thanhpho">
+        <item>Sai Gon</item>
+        <item>Hue</item>
+        <item>Da Nang</item>
+        <item>Da Lat</item>
+        <item>Nha Trang</item>
+    </string-array>
+</resources>

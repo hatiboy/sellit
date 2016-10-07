@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context="sellit.soict.com.ui.SellActivity">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layoutImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_picture"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/inputPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Tiêu đề sản phẩm"
+            android:inputType="textCapSentences"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <sellit.soict.com.view.TextViewRobotoRegular
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:editable="false"
+            android:hint="Danh mục"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <sellit.soict.com.view.TextViewRobotoRegular
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:editable="false"
+            android:hint="Địa chỉ"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Giá"
+                android:inputType="number"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <sellit.soict.com.view.TextViewRobotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="đ" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Tình trạng"
+                android:inputType="number"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <sellit.soict.com.view.TextViewRobotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="%" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Nội dung"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+        <EditText
+            android:id="@+id/rePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <sellit.soict.com.view.TextViewRobotoRegular
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin liên hệ"
+            android:textColor="@color/bg_call"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Tên"
+            android:inputType="textCapWords"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#20000000"></View>
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/mail"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:hint="E-mail"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:paddingBottom="@dimen/margin_top"-->
+            <!--android:paddingTop="@dimen/margin_top" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.1dp"-->
+            <!--android:background="#20000000"></View>-->
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Điện thoại"
+            android:inputType="number"
+            android:paddingBottom="@dimen/margin_top"
+            android:paddingTop="@dimen/margin_top" />
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.1dp"-->
+        <!--android:background="#20000000"></View>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/phone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:hint="Số điện thoại"-->
+        <!--android:inputType="phone"-->
+        <!--android:paddingBottom="@dimen/margin_top"-->
+        <!--android:paddingTop="@dimen/margin_top" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.1dp"-->
+        <!--android:background="#20000000"></View>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/password"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:hint="Mật khẩu"-->
+        <!--android:inputType="textCapSentences"-->
+        <!--android:paddingBottom="@dimen/margin_top"-->
+        <!--android:paddingTop="@dimen/margin_top" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.1dp"-->
+        <!--android:background="#20000000"></View>-->
+
+        <Button
+            android:id="@+id/btnSell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_action_call_sms"
+            android:shadowColor="#80000000"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="Đăng bài"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

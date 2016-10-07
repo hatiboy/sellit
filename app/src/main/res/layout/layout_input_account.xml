@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            tools:context="sellit.soict.com.ui.SellActivity">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Tên"
+                android:inputType="textCapWords"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#20000000"></View>
+
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#20000000"></View>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Điện thoại"
+                android:inputType="number"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#20000000"></View>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#20000000"></View>
+
+            <EditText
+                android:id="@+id/rePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/margin_top"
+                android:paddingTop="@dimen/margin_top" />
+
+            <Button
+                android:id="@+id/btnSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_action_call_sms"
+                android:shadowColor="#80000000"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Đăng bài"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

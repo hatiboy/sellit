@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edt_login"
+        android:hint="Tài khoản"
+        android:padding="@dimen/pading_edt_login"
+        android:textColor="@color/white"
+        android:textColorHint="#f0ffffff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/width_login"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_edt_login"
+        android:hint="Mật khẩu"
+        android:padding="@dimen/pading_edt_login"
+        android:textColor="@color/white"
+        android:textColorHint="#f0ffffff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_login"
+        android:text="Đăng nhập"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <sellit.soict.com.view.TextViewRobotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Đăng kí tài khoản"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"></View>
+    </LinearLayout>
+
+
+</LinearLayout>
